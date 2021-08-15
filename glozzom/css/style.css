@@ -70,3 +70,15 @@ body{
     padding-bottom: 10px;
 }
 
+#about-header{
+
+    background: url('../../boiler-plate/image/glozzom/image1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    background-attachment: fixed;
+
+}
+
+#about img{
+    margin-top: -50px;
+}
