@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .navbar .nav-item.active{
     border-left:  2px solid white;
 }

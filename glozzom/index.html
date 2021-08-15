@@ -250,9 +250,8 @@
     </section>
 
 
-    <!-- //news-letter  -->
 
-    <!-- <section id="news-letter" class="text-center p-5 bg-dark text-white">
+    <section id="news-letter" class="text-center p-5 bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -260,10 +259,30 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aperiam? Maxime dolorum
                         vero, quod eius itaque omnis? Labore sapiente aliquam, atque reprehenderit beatae dignissimos
                         qui.</p>
+
+                    <form action="" class="form-inline justify-content-center">
+                        <input type="text" class="form-control mb-2 mr-2" placeholder="Name">
+                        <input type="text" class="form-control mb-2 mr-2" placeholder="Email">
+                        <button class="btn btn-primary mb-2">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+
+    <!-- footer  -->
+    <footer id="footer" class="text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; <span id="year">Glozzum</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <!-- video modal  -->
 
@@ -298,6 +317,7 @@
             interval: 5000,
             pause: 'hover'
         })
+        $('#year').text(new Date().getFullYear())
 
         // light box init
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
