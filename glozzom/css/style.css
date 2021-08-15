@@ -1,0 +1,30 @@
+.navbar .nav-item.active{
+    border-left:  2px solid white;
+}
+
+.navbar .nav-link{
+    padding-left: 1rem !important;
+       text-transform: uppercase;
+       padding-right: 1rem;
+       font-size: 14px;
+}
+
+.carousel-item{
+    height: 450px;
+}
+
+.corousel-image-1{
+    background: url('../../boiler-plate/image/glozzom/image1.jpg');
+    background-size: cover;
+
+}
+.corousel-image-2{
+    background: url('../../boiler-plate/image/glozzom/image2.jpg');
+    background-size: cover;
+
+}
+.corousel-image-3{
+    background: url('../../boiler-plate/image/glozzom/image3.jpg');
+    background-size: cover;
+
+}
