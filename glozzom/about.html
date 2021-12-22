@@ -237,7 +237,51 @@
             slideToShow: 1,
             slideToScroll: 1
         })
+        var cardType = "red"
 
+        var cards = [
+            { "cardType": "green", "label": "1" },
+            { "cardType": "green", "label": "2" },
+            { "cardType": "green", "label": "1" },
+            { "cardType": "green", "label": "4" },
+            { "cardType": "yellow", "label": "5" },
+            { "cardType": "red", "label": "6" },
+            { "cardType": "red", "label": "10" }
+        ]
+
+        // console.log('asdf')
+        // let card_arr = cards.map((e) => e.cardType)
+        // console.log(card_arr)
+        function findMostFrequent(arr) {
+            // let mf = 1;
+            // let m = 0;
+            // let item;
+
+            // for (let i = 0; i < arr.length; i++) {
+            //     for (let j = i; j < arr.length; j++) {
+            //         if (arr[i] == arr[j]) {
+            //             m++;
+            //             if (m > mf) {
+            //                 mf = m;
+            //                 item = arr[i];
+            //             }
+            //         }
+            //     }
+            //     m = 0;
+            // }
+            return arr.sort((a, b) =>
+                arr.filter(v => v.cardType === a.cardType).length
+                - arr.filter(v => v.cardType === b.cardType).length
+            ).pop();
+            return item;
+        }
+
+        // const obj_key = findMostFrequent(card_arr);
+        const obj_key = findMostFrequent(cards);
+        console.log(obj_key)
+
+        // const new_obj = cards.filter(e => e.cardType == obj_key)
+        // console.log(new_obj)
     </script>
 
 
